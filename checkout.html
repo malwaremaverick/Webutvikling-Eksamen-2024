@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Checkout-siden til nettbutikken">
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet">
+    <link href="ikoner/css/brands.css" rel="stylesheet">
+    <link href="ikoner/css/solid.css" rel="stylesheet">
+    <link href="ikoner/css/regular.css" rel="stylesheet">
+    <!-- Fungerte ikke med lokale linkingen til all.min.css, brukte så cloud versjonen av filen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Checkout-siden til nettbutikken</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <form class="search-container">
+                <label for="search-bar">søk her</label>
+                <input type="search" id="search-bar" placeholder="Søk her" aria-label="Søk">
+                <i class="fas fa-search search-icon"></i>
+            </form>
+            <ul class="nav-links">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="index.html#pop-products">Produkter</a></li>
+                <li><a href="index.html" id="logo">Logo</a></li>
+                <li><a href="index.html#pop-category">Kategorier</a></li>
+                <li><a href="#contact">Kontakt oss</a></li>
+            </ul>
+            <ul class="nav-icons">
+                <li><i class="fa-regular fa-user"></i></li>
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li><a href="checkout.html" aria-label="Handlekurv" id="cart"><i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="checkout">
+        <a href="index.html" class="fortsetthandle"><i class="fa-solid fa-arrow-left"></i> Fortsett og handle</a>
+        <h1>Kasse</h1>
+        <section id="shopping-bag">
+            <h2 class="checkout-title">1. Shoppingbagen din</h2>
+
+            <article class="shoppingbag-item">
+                <a href="product.html">
+                    <picture>
+                        <source media="(max-width: 300px)" srcset="img/woman-dress.jpg">
+                        <source media="(max-width: 600px)" srcset="img/woman-dress.jpg">
+                        <img src="img/woman-dress.jpg" alt="Modell i hvit kjole med blomstermønster.">
+                        <!-- Bilde er hentet fra https://pixabay.com/photos/woman-portrait-model-dress-fashion-5679284/ -->
+                    </picture>
+                </a>
+                <article class="shoppingbag-info">
+                    <h3>Product name</h3>
+                    <ul>
+                        <li>Kr 1999</li>
+                        <li>Farge: Hvit med blomstermønster</li>
+                    </ul>
+                    <label for="bag-size1">Størrelse
+                    </label>
+                    <select name="bag-size" id="bag-size1">
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <label for="bag-quantity1">Antall
+                    </label>
+                    <input type="number" min="1" max="99" id="bag-quantity1" placeholder="1">
+                    <!-- max:99  -->
+
+                </article>
+                <ul class="shoppingbag-icons">
+                    <li><i class="fa-regular fa-heart"></i></li>
+                    <li><i class="fa-solid fa-trash"></i></li>
+                </ul>
+            </article>
+
+
+            <article class="shoppingbag-item">
+                <a href="product.html">
+                    <picture>
+                        <source media="(max-width: 300px)" srcset="img/woman-dress.jpg">
+                        <source media="(max-width: 600px)" srcset="img/woman-dress.jpg">
+                        <img src="img/woman-dress.jpg" alt="Modell i hvit kjole med blomstermønster.">
+                        <!-- Bilde er hentet fra https://pixabay.com/photos/woman-portrait-model-dress-fashion-5679284/ -->
+                    </picture>
+                </a>
+                <article class="shoppingbag-info">
+                    <h3>Product name</h3>
+                    <ul>
+                        <li>Kr 1999</li>
+                        <li>Farge: Hvit med blomstermønster</li>
+                    </ul>
+                    <label for="bag-size2">Størrelse
+                    </label>
+                    <select name="bag-size" id="bag-size2">
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <label for="bag-quantity2">Antall
+                    </label>
+                    <input type="number" min="1" max="99" id="bag-quantity2" placeholder="1">
+
+                </article>
+                <ul class="shoppingbag-icons">
+                    <li><i class="fa-regular fa-heart"></i></li>
+                    <li><i class="fa-solid fa-trash"></i></li>
+                </ul>
+            </article>
+
+            <article class="shoppingbag-item">
+                <a href="product.html">
+                    <picture>
+                        <source media="(max-width: 300px)" srcset="img/woman-dress.jpg">
+                        <source media="(max-width: 600px)" srcset="img/woman-dress.jpg">
+                        <img src="img/woman-dress.jpg" alt="Modell i hvit kjole med blomstermønster">
+                        <!-- Bilde er hentet fra https://pixabay.com/photos/woman-portrait-model-dress-fashion-5679284/ -->
+                    </picture>
+                </a>
+                <article class="shoppingbag-info">
+                    <h3>Product name</h3>
+                    <ul>
+                        <li>Kr 1999</li>
+                        <li>Farge: Hvit med blomstermønster</li>
+                    </ul>
+                    <label for="bag-size3">Størrelse
+                    </label>
+                    <select name="bag-size" id="bag-size3">
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <label for="bag-quantity3">Antall
+                    </label>
+                    <input type="number" min="1" max="99" id="bag-quantity3" placeholder="1">
+
+                </article>
+                <ul class="shoppingbag-icons">
+                    <li><i class="fa-regular fa-heart"></i></li>
+                    <li><i class="fa-solid fa-trash"></i></li>
+                </ul>
+            </article>
+
+            <article class="shoppingbag-item">
+                <a href="product.html">
+                    <picture>
+                        <source media="(max-width: 300px)" srcset="img/woman-dress.jpg">
+                        <source media="(max-width: 600px)" srcset="img/woman-dress.jpg">
+                        <img src="img/woman-dress.jpg" alt="Modell i hvit kjole med blomstermønster">
+                        <!-- Bilde er hentet fra https://pixabay.com/photos/woman-portrait-model-dress-fashion-5679284/ -->
+                    </picture>
+                </a>
+                <article class="shoppingbag-info">
+                    <h3>Product name</h3>
+                    <ul>
+                        <li>Kr 1999</li>
+                        <li>Farge: Hvit med blomstermønster</li>
+                    </ul>
+                    <label for="bag-size4">Størrelse
+                    </label>
+                    <select name="bag-size" id="bag-size4">
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <label for="bag-quantity4">Antall
+                    </label>
+                    <input type="number" min="1" max="99" id="bag-quantity4" placeholder="1">
+
+                </article>
+                <ul class="shoppingbag-icons">
+                    <li><i class="fa-regular fa-heart"></i></li>
+                    <li><i class="fa-solid fa-trash"></i></li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="information">
+            <h2 class="checkout-title">2. Dine opplysninger</h2>
+            <form class="form-information">
+                <fieldset>
+                    <legend>Leveringsadresse</legend>
+                    <label for="fname">Fornavn</label>
+                    <input type="text" id="fname" name="fornavn" placeholder="Fornavn*" required>
+                    <label for="lname">Etternavn</label>
+                    <input type="text" id="lname" name="etternavn" placeholder="Etternavn*" required>
+                    <label for="gateadresse">Gateadresse</label>
+                    <input type="text" id="gateadresse" name="gateadresse" placeholder="Gateadresse*" required>
+                    <label for="postnummer">Postnummer</label>
+                    <input type="number" id="postnummer" name="postnummer" min="0001" max="9998"
+                        placeholder="Postnummer*" required>
+                    <label for="poststed">Poststed</label>
+                    <input type="text" id="poststed" name="poststed" placeholder="Poststed*" required>
+                </fieldset>
+            </form>
+
+            <form class="form-information">
+                <fieldset>
+                    <legend>Kontaktinformasjon</legend>
+                    <label for="epost">E-post</label>
+                    <input type="email" id="epost" name="epost" placeholder="example@mail.com *"
+                        pattern=".+@example\.com" minlength="3" required>
+
+                    <label for="telefon">Telefon</label>
+                    <input type="tel" id="telefon" name="telefon" placeholder="+47 49 ** ** 00"
+                        pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required>
+                </fieldset>
+            </form>
+            <button type="submit" class="form-info-btn">Lagre</button>
+            <a href="#" id="form-info-abort">Avbryt</a>
+        </section>
+
+        <section id="delivery">
+            <h2 class="checkout-title">3. Levering</h2>
+            <form id="form-delivery">
+                <h3>Leveringsvalg</h3>
+                <fieldset class="delivery-option">
+                    <legend class="not-visible">Leveringsvalg</legend>
+                    <input type="radio" id="ekspress-hjem" name="levering" value="Ekspress hjemlevering">
+                    <label for="ekspress-hjem">Ekspress hjemlevering</label>
+                    <ul>
+                        <li>3-4 virkedager</li>
+                        <li class="delivery-icon"><span>59 kr</span><i class="fa-solid fa-truck"></i></li>
+                        <li>Bestill hverdag før 08:00* for levering neste arbeidsdag. Leveres hje til deg før frokost
+                            mandag til lørdag. *For leveringer til postnummer 4000-7999 er leveringstiden 2 virkedager
+                            for postnummer 8000-9999 er leveringstiden 3 virkedager.</li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="delivery-option">
+                    <input type="radio" id="ekspress-utleveringssted" name="levering"
+                        value="Ekspress pakke til utleveringssted">
+                    <label for="ekspress-utleveringssted">Ekspress pakke til utleveringssted</label>
+                    <ul>
+                        <li>1-3 virkedager</li>
+                        <li class="delivery-icon"><span>59 kr</span><i class="fa-brands fa-dhl"></i></li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="delivery-option">
+                    <input type="radio" id="standard-hjemlevering" name="levering" value="Standard hjemlevering">
+                    <label for="standard-hjemlevering">Standard hjemlevering</label>
+                    <ul>
+                        <li>5-8 virkedager</li>
+                        <li class="delivery-icon"><span>Gratis</span><i class="fa-solid fa-box"></i></li>
+                        <li>Leveres hjem til deg før frokost mandag til lørdag innen 4-7 virkedager.</li>
+                    </ul>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="payment">
+            <h2 class="checkout-title">4. Betaling</h2>
+            <form id="form-payment">
+                <fieldset>
+                    <legend>Betal med kort <i class="fa-solid fa-credit-card"></i></legend>
+                    <label for="kortnummer">Kortnummer</label>
+                    <input type="text" id="kortnummer" name="kortnummer" pattern="\d{4}-\d{4}-\d{4}-\d{4}"
+                        minlength="16" placeholder="****-****-****-4444" required>
+                    <label for="utlopsdato">Utløpsdato</label>
+                    <input type="date" id="utlopsdato" name="utlopsdato" required>
+
+                    <label for="ccv">CVC/CCV</label>
+                    <input type="number" id="ccv" name="ccv" placeholder="CVC/CCV" min="3" max="3" required>
+                </fieldset>
+            </form>
+
+            <section class="checkboxes">
+                <h3>Å betale inkl. mva</h3>
+                <p id="price">1 199 kr</p>
+                <button type="button" class="form-info-btn">Fullfør kjøp</button>
+                <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og
+                    fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet
+                    dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
+
+                <form>
+                    <fieldset>
+                        <legend class="not-visible">Jeg godtar vilkår</legend>
+                        <input type="checkbox" id="vilkår" name="vilkår" value="vilkår">
+                        <label for="vilkår">Ja, jeg godtar vilkårene.</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="not-visible">Motta nyhetsbrev</legend>
+                        <input type="checkbox" id="nyhetsbrev" name="nyhetsbrev" value="Nyhetsbrev">
+                        <label for="nyhetsbrev">Ja takk! Send nyhetsbrev til meg.</label>
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-logo">
+            <a href="index.html" aria-label="logo">
+                <h3>Logo</h3>
+            </a>
+            <p>Cupidatat eu consequat ad voluptate. Qui sunt occaecat cupidatat reprehenderit.</p>
+        </section>
+
+        <section class="footer-contact" id="contact">
+            <h4>KONTAKT</h4>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i><span>Adresse:</span> B R A Veien 4, 1757 Halden
+                </li>
+                <li><i class="fa-solid fa-phone"></i><span>Telefon:</span> 69 60 80 00</li>
+                <li><i class="fa-solid fa-envelope"></i><span>E-post:</span> halden@hiof.no </li>
+                <li><i class="fa-solid fa-clock"></i><span>Åpningstider:</span> Stenger 15:00 </li>
+            </ul>
+        </section>
+
+        <section class="footer-shortcuts">
+            <h4>Snarveier</h4>
+            <ul>
+                <li><a href="product.html">Produkter</a></li>
+                <li><a href="index.html#pop-category">Kategorier</a></li>
+                <li><a href="#contact">Kontakt oss</a></li>
+                <li><a href="WCAG-sjekkliste.pdf">Tilgjengelighetserklæring</a></li>
+            </ul>
+        </section>
+
+        <section class="footer-social">
+            <h4>Sosiale medier</h4>
+            <ul>
+                <li><a href="https://www.instagram.com" aria-label="Instagram" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </li>
+                <li><a href="https://www.facebook.com" aria-label="Facebook" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com" aria-label="LinkedIn" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </li>
+                <li><a href="https://www.pinterest.com" aria-label="Pinterest" target="_blank"><i
+                            class="fab fa-pinterest"></i></a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>

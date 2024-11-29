@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forsiden til nettbutikken">
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet">
+    <link href="ikoner/css/brands.css" rel="stylesheet">
+    <link href="ikoner/css/solid.css" rel="stylesheet">
+    <link href="ikoner/css/regular.css" rel="stylesheet">
+    <!-- Fungerte ikke med lokale linkingen til all.min.css, brukte så cloud versjonen av filen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Forsiden til nettbutikken</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <form class="search-container">
+                <label for="search-bar">søk her</label>
+                <input type="search" id="search-bar" placeholder="Søk her" aria-label="Søk">
+                <i class="fas fa-search search-icon"></i>
+            </form>
+            <ul class="nav-links">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="index.html#pop-products">Produkter</a></li>
+                <li><a href="index.html" id="logo">Logo</a></li>
+                <li><a href="index.html#pop-category">Kategorier</a></li>
+                <li><a href="#contact">Kontakt oss</a></li>
+            </ul>
+            <ul class="nav-icons">
+                <li><i class="fa-regular fa-user"></i></li>
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li><a href="checkout.html" aria-label="Handlekurv" id="cart"><i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner" class="side-scroll-parent">
+            <section class="banner-slider-btns">
+                <button class="banner-slider-btn" type="button"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="banner-slider-btn" type="button"><i class="fa-solid fa-arrow-right"></i></button>
+            </section>
+            <h2 class="not-visible">Sidescroll banner</h2>
+            <article class="banner-image banner-img1 side-scroll-child"
+                aria-label="Bannerbilde 1, Bilde av fjell i mørke toner"
+                style="background-image: url('img/banner1.jpg')">
+                <!-- Bilde hentet fra https://pixabay.com/photos/mountains-alps-sunset-summit-8567074/  -->
+                <h3 class="banner-title text-right">Velit mollit aute duis anim Lorem esse mollit aute cupidatat et anim
+                </h3>
+                <p class="banner-text text-right">Eiusmod dolore qui sunt enim cupidatat commodo tempor veniam laborum
+                    labore. Sunt Lorem nostrud nulla minim.</p>
+                <button class="banner-btn text-right banner-btn-light" type="button">Les mer</button>
+            </article>
+            <article class="banner-image banner-img2 side-scroll-child"
+                aria-label="Bannerbilde 2, bilde av havn med båter" style="background-image: url('img/banner2.jpg')">
+                <!-- Bilde hentet fra https://pixabay.com/photos/sea-sparse-mooring-boat-vacation-8041734/  -->
+                <h3 class="banner-title text-left text-black">Eiusmod dolore qui sunt enim cupidatat commodo tempor
+                    veniam
+                    laborum labore. Sunt Lorem nostrud nulla minim.
+                </h3>
+                <p class="banner-text text-left text-black">Velit mollit aute duis anim Lorem esse mollit aute
+                    cupidatat et anim mollit non.</p>
+                <button class="banner-btn text-left banner-btn-dark" type="button">Les mer</button>
+            </article>
+            <article class="banner-image banner-img3 side-scroll-child"
+                aria-label="Bannerbilde 3, bilde av fjell i høst stemning"
+                style="background-image: url('img/banner3.jpg')">
+                <!-- Bilde hentet fra https://pixabay.com/photos/autumn-mountain-landscape-8467482/  -->
+                <h3 class="banner-title text-left text-white">Eiusmod dolore qui sunt enim cupidatat commodo tempor
+                    veniam
+                    laborum labore. Sunt Lorem nostrud nulla minim.
+                </h3>
+                <p class="banner-text text-left text-white">Velit mollit aute duis anim Lorem esse mollit aute
+                    cupidatat et anim mollit non.</p>
+                <button class="banner-btn text-left banner-btn-light">Les mer</button>
+            </article>
+        </section>
+
+        <section id="pop-products">
+            <h1>Våre mest populære produkter</h1>
+            <p>Oppdag det beste av det beste</p>
+
+            <aside class="pop-btns">
+                <button class="pop-btn active">New product</button>
+                <button class="pop-btn">Special Price</button>
+                <button class="pop-btn">Best sellers</button>
+            </aside>
+
+            <section id="product-cards">
+                <a href="product.html">
+                    <article class="product-card">
+                        <h3 class="not-visible">Produktkort</h3>
+                        <i class="fa-regular fa-heart product-card-icon"></i>
+                        <img src="https://picsum.photos/350/350"
+                            alt="Produktbilde tilfeldig generert av Picsum. Linker til produktsiden.">
+                        <!-- <picture>
+                            <source media="(width: 380px)" srcset="https://picsum.photos/200/200">
+                            <source media="(width: 380px)" srcset="https://picsum.photos/200/200">
+                            <img src="https://picsum.photos/800/800"
+                                alt="Produktbilde tilfeldig generert av Picsum. Linker til produktsiden.>
+                        </picture> -->
+                        <article class="product-card-info">
+                            <ul class="card-info1">
+                                <li>Product name</li>
+                                <li>Kr 1999</li>
+                            </ul>
+                            <ul class="card-info2">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li>842 Reviews</li>
+                            </ul>
+                        </article>
+                    </article>
+                </a>
+
+                <a href="product.html">
+                    <article class="product-card">
+                        <h3 class="not-visible">Produktkort</h3>
+                        <i class="fa-regular fa-heart product-card-icon"></i>
+                        <img src="https://picsum.photos/350/350"
+                            alt="Produktbilde tilfeldig generert av Picsum. Linker til produktsiden.">
+                        <!-- <picture>
+                            <source media="(width: 380px)" srcset="https://picsum.photos/200/200">
+                            <source media="(width: 380px)" srcset="https://picsum.photos/200/200">
+                            <img src="https://picsum.photos/800/800"
+                                alt="Produktbilde tilfeldig generert av Picsum. Linker til produktsiden.">
+                        </picture> -->
+                        <article class="product-card-info">
+                            <ul class="card-info1">
+                                <li>Product name</li>
+                                <li>Kr 1999</li>
+                            </ul>
+                            <ul class="card-info2">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li>842 Reviews</li>
+                            </ul>
+                        </article>
+                    </article>
+                </a>
+
+                <a href="product.html">
+                    <article class="product-card">
+                        <h3 class="not-visible">Produktkort</h3>
+                        <i class="fa-regular fa-heart product-card-icon"></i>
+                        <img src="https://picsum.photos/350/350"
+                            alt="Produktbilde tilfeldig generert av Picsum. Linker til produktsiden.">
+                        <!-- <picture>
+                            <source media="(width: 380px)" srcset="https://picsum.photos/200/200">
+                            <source media="(width: 380px)" srcset="https://picsum.photos/200/200">
+                            <img src="https://picsum.photos/800/800"
+                                alt="Produktbilde tilfeldig generert av Picsum. Linker til produktsiden.">
+                        </picture> -->
+                        <article class="product-card-info">
+                            <ul class="card-info1">
+                                <li>Product name</li>
+                                <li>Kr 1999</li>
+                            </ul>
+                            <ul class="card-info2">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li>842 Reviews</li>
+                            </ul>
+                        </article>
+                    </article>
+                </a>
+
+                <a href="product.html">
+                    <article class="product-card">
+                        <h3 class="not-visible">Produktkort</h3>
+                        <i class="fa-regular fa-heart product-card-icon"></i>
+                        <img src="https://picsum.photos/350/350"
+                            alt="Produktbilde tilfeldig generert av Picsum. Linker til produktsiden.">
+                        <!-- <picture>
+                            <source media="(width: 380px)" srcset="https://picsum.photos/200/200">
+                            <source media="(width: 380px)" srcset="https://picsum.photos/200/200">
+                            <img src="https://picsum.photos/800/800"
+                                alt="Produktbilde tilfeldig generert av Picsum. Linker til produktsiden.">
+                        </picture> -->
+                        <article class="product-card-info">
+                            <ul class="card-info1">
+                                <li>Product name</li>
+                                <li>Kr 1999</li>
+                            </ul>
+                            <ul class="card-info2">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li>842 Reviews</li>
+                            </ul>
+                        </article>
+                    </article>
+                </a>
+
+                <a href="product.html">
+                    <article class="product-card">
+                        <h3 class="not-visible">Produktkort</h3>
+                        <i class="fa-regular fa-heart product-card-icon"></i>
+                        <img src="https://picsum.photos/350/350"
+                            alt="Produktbilde tilfeldig generert av Picsum. Linker til produktsiden.">
+                        <!-- <picture>
+                            <source media="(width: 380px)" srcset="https://picsum.photos/200/200">
+                            <source media="(width: 380px)" srcset="https://picsum.photos/200/200">
+                            <img src="https://picsum.photos/800/800"
+                                alt="Produktbilde tilfeldig generert av Picsum. Linker til produktsiden.">
+                        </picture> -->
+                        <article class="product-card-info">
+                            <ul class="card-info1">
+                                <li>Product name</li>
+                                <li>Kr 1999</li>
+                            </ul>
+                            <ul class="card-info2">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li>842 Reviews</li>
+                            </ul>
+                        </article>
+                    </article>
+                </a>
+
+                <a href="product.html">
+                    <article class="product-card">
+                        <h3 class="not-visible">Produktkort</h3>
+                        <i class="fa-regular fa-heart product-card-icon"></i>
+                        <img src="https://picsum.photos/350/350"
+                            alt="Produktbilde tilfeldig generert av Picsum. Linker til produktsiden.">
+                        <!-- <picture>
+                            <source media="(width: 380px)" srcset="https://picsum.photos/200/200">
+                            <source media="(width: 380px)" srcset="https://picsum.photos/200/200">
+                            <img src="https://picsum.photos/800/800"
+                                alt="Produktbilde tilfeldig generert av Picsum. Linker til produktsiden.">
+                        </picture> -->
+                        <article class="product-card-info">
+                            <ul class="card-info1">
+                                <li>Product name</li>
+                                <li>Kr 1999</li>
+                            </ul>
+                            <ul class="card-info2">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li>842 Reviews</li>
+                            </ul>
+                        </article>
+                    </article>
+                </a>
+            </section>
+        </section>
+
+        <section id="pop-category">
+            <h2>Våre mest populære kategorier</h2>
+            <p>Oppdag det beste av det beste</p>
+
+            <section class="categories">
+                <h3 class="not-visible">Kategorier</h3>
+                <article class="category-card card1" aria-label="Bilde 1, bilde av en strand med solnedgang">
+                    <h4>Category 1</h4>
+                </article>
+                <article class="category-card card2" aria-label="Bilde 2, bilde av en kvinne i en elegant, mørk kjole">
+                    <h4>Category 2</h4>
+                </article>
+                <article class="category-card card3" aria-label="Bilde 3, bilde av en kvinne i sport klær">
+                    <h4>Category 3</h4>
+                </article>
+                <article class="category-card card4" aria-label="Bilde 4, bilde av en kvinne med vinterjakke">
+                    <h4>Category 4</h4>
+                </article>
+                <article class="category-card card5" aria-label="Bilde 5, bilde av en kvinne i en rød kjole">
+                    <h4>Category 5</h4>
+                </article>
+            </section>
+        </section>
+
+
+        <section id="reviews">
+            <h2>Anmeldelser</h2>
+            <section class="review-cards side-scroll-parent">
+                <h3 class="not-visible">Anmeldelseskort</h3>
+                <article class="review-card side-scroll-child">
+                    <img src="https://picsum.photos/100/100"
+                        alt="Et tilfeldig generert bilde som representerer en kunde som har skrevet en anmeldelse, hentet fra Picsum.">
+                    <h5>Navn Navnesen</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <p>Proident amet ipsum proident. Duis ex eiusmod proident ea consequat pariatur deserunt. Irure
+                        occaecat ipsum quis consectetur deserunt aliqua magna sit sunt.</p>
+                </article>
+
+                <article class="review-card side-scroll-child">
+                    <img src="https://picsum.photos/100/100"
+                        alt="Et tilfeldig generert bilde som representerer en kunde som har skrevet en anmeldelse, hentet fra Picsum.">
+                    <h5>Navn Navnesen</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <p>Proident amet ipsum proident. Duis ex eiusmod proident ea consequat pariatur deserunt. Irure
+                        occaecat ipsum quis consectetur deserunt aliqua magna sit sunt.</p>
+                </article>
+
+                <article class="review-card side-scroll-child">
+                    <img src="https://picsum.photos/100/100"
+                        alt="Et tilfeldig generert bilde som representerer en kunde som har skrevet en anmeldelse, hentet fra Picsum.">
+                    <h5>Navn Navnesen</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <p>Proident amet ipsum proident. Duis ex eiusmod proident ea consequat pariatur deserunt. Irure
+                        occaecat ipsum quis consectetur deserunt aliqua magna sit sunt.</p>
+                </article>
+
+                <article class="review-card side-scroll-child">
+                    <img src="https://picsum.photos/100/100"
+                        alt="Et tilfeldig generert bilde som representerer en kunde som har skrevet en anmeldelse, hentet fra Picsum.">
+                    <h5>Navn Navnesen</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <p>Proident amet ipsum proident. Duis ex eiusmod proident ea consequat pariatur deserunt. Irure
+                        occaecat ipsum quis consectetur deserunt aliqua magna sit sunt.</p>
+                </article>
+
+                <article class="review-card side-scroll-child">
+                    <img src="https://picsum.photos/100/100"
+                        alt="Et tilfeldig generert bilde som representerer en kunde som har skrevet en anmeldelse, hentet fra Picsum.">
+                    <h5>Navn Navnesen</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <p>Proident amet ipsum proident. Duis ex eiusmod proident ea consequat pariatur deserunt. Irure
+                        occaecat ipsum quis consectetur deserunt aliqua magna sit sunt.</p>
+                </article>
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="footer-logo">
+            <a href="index.html" aria-label="logo">
+                <h3>Logo</h3>
+            </a>
+            <p>Cupidatat eu consequat ad voluptate. Qui sunt occaecat cupidatat reprehenderit.</p>
+        </section>
+
+        <section class="footer-contact" id="contact">
+            <h4>KONTAKT</h4>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i><span>Adresse:</span> B R A Veien 4, 1757 Halden
+                </li>
+                <li><i class="fa-solid fa-phone"></i><span>Telefon:</span> 69 60 80 00</li>
+                <li><i class="fa-solid fa-envelope"></i><span>E-post:</span> halden@hiof.no </li>
+                <li><i class="fa-solid fa-clock"></i><span>Åpningstider:</span> Stenger 15:00 </li>
+            </ul>
+        </section>
+
+        <section class="footer-shortcuts">
+            <h4>Snarveier</h4>
+            <ul>
+                <li><a href="product.html">Produkter</a></li>
+                <li><a href="index.html#pop-category">Kategorier</a></li>
+                <li><a href="#contact">Kontakt oss</a></li>
+                <li><a href="WCAG-sjekkliste.pdf">Tilgjengelighetserklæring</a></li>
+            </ul>
+        </section>
+
+        <section class="footer-social">
+            <h4>Sosiale medier</h4>
+            <ul>
+                <li><a href="https://www.instagram.com" aria-label="Instagram" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </li>
+                <li><a href="https://www.facebook.com" aria-label="Facebook" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com" aria-label="LinkedIn" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </li>
+                <li><a href="https://www.pinterest.com" aria-label="Pinterest" target="_blank"><i
+                            class="fab fa-pinterest"></i></a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>

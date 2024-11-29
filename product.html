@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Produktsiden til nettbutikken">
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet">
+    <link href="ikoner/css/brands.css" rel="stylesheet">
+    <link href="ikoner/css/solid.css" rel="stylesheet">
+    <link href="ikoner/css/regular.css" rel="stylesheet">
+    <!-- Fungerte ikke med lokale linkingen til all.min.css, brukte så cloud versjonen av filen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Produktsiden til nettbutikken</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <form class="search-container">
+                <label for="search-bar">søk her</label>
+                <input type="search" id="search-bar" placeholder="Søk her" aria-label="Søk">
+                <i class="fas fa-search search-icon"></i>
+            </form>
+            <ul class="nav-links">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="index.html#pop-products">Produkter</a></li>
+                <li><a href="index.html" id="logo">Logo</a></li>
+                <li><a href="index.html#pop-category">Kategorier</a></li>
+                <li><a href="#contact">Kontakt oss</a></li>
+            </ul>
+            <ul class="nav-icons">
+                <li><i class="fa-regular fa-user"></i></li>
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li><a href="checkout.html" aria-label="Handlekurv" id="cart"><i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="product-section">
+            <h1>Produktside</h1>
+            <ul class="bread-crumbs">
+                <li><a href="index.html">Hjem</a> <i class="fa-solid fa-angle-right"></i> </li>
+                <li><a href="index.html#pop-category">Kategori</a> <i class="fa-solid fa-angle-right"></i> </li>
+                <li><a href="product.html">Produktnavn</a></li>
+            </ul>
+
+            <section class="products">
+                <h2 class="not-visible">Produktbilde</h2>
+                <section class="product-images">
+                    <h3 class="not-visible">Produkt: Kjole med blomstermønster</h3>
+                    <picture class="product-image prod1">
+                        <source media="(max-width: 300px)" srcset="img/woman-dress.jpg">
+                        <source media="(max-width: 400px)" srcset="img/woman-dress.jpg">
+                        <img src="img/woman-dress.jpg" alt="Modell i hvit kjole med blomstermønster">
+                        <!-- Bilde hentet fra https://pixabay.com/photos/woman-portrait-model-dress-fashion-5679284/ -->
+                    </picture>
+
+                    <picture class="product-image prod2">
+                        <source media="(max-width: 300px)" srcset="img/woman-dress.jpg">
+                        <source media="(max-width: 400px)" srcset="img/woman-dress.jpg">
+                        <img src="img/woman-dress.jpg" alt="Modell i hvit kjole med blomstermønster">
+                        <!-- Bilde hentet fra https://pixabay.com/photos/woman-portrait-model-dress-fashion-5679284/ -->
+                    </picture>
+
+                    <picture class="product-image prod3">
+                        <source media="(max-width: 300px)" srcset="img/woman-dress.jpg">
+                        <source media="(max-width: 400px)" srcset="img/woman-dress.jpg">
+                        <img src="img/woman-dress.jpg" alt="Modell i hvit kjole med blomstermønster">
+                        <!-- Bilde hentet fra https://pixabay.com/photos/woman-portrait-model-dress-fashion-5679284/ -->
+                    </picture>
+
+                    <picture class="product-image prod4">
+                        <source media="(max-width: 300px)" srcset="img/woman-dress.jpg">
+                        <source media="(max-width: 400px)" srcset="img/woman-dress.jpg">
+                        <img src="img/woman-dress.jpg" alt="Modell i hvit kjole med blomstermønster">
+                        <!-- Bilde hentet fra https://pixabay.com/photos/woman-portrait-model-dress-fashion-5679284/ -->
+                    </picture>
+                </section>
+
+                <section class="product-info-section">
+                    <h2 class="not-visible">Produktinformasjon</h2>
+                    <article class="product-info">
+                        <h2>Produktnavn</h2>
+                        <a href="#">MERKENAVN</a>
+                        <p>5 195kr inkl. mva</p>
+                        <p>FARGE: <span>Hvit med blå blomster</span></p>
+
+                        <label for="size">Størrelse
+                        </label>
+                        <select name="size" id="size">
+                            <option>Velg størrelse: </option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <div class="product-btns">
+                            <button type="button" class="black-btn prod-btn">Legg i handlekurv</button>
+                            <button type="button" class="white-btn"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </article>
+
+                    <section class="details-section">
+                        <h2 class="not-visible">Produktdetaljer</h2>
+                        <details class="product-details">
+                            <summary>Materiale og vedlikehold <i class="fa-solid fa-plus detail-icon"></i>
+                            </summary>
+                            <ul>
+                                <li>Overmateriale: 95% viskose, 5% elastan</li>
+                                <li>Materiale ermer: 100% polyester</li>
+                                <li>Materiale: Jersey</li>
+                            </ul>
+                        </details>
+                        <details class="product-details">
+                            <summary>Produktdetaljer <i class="fa-solid fa-plus detail-icon"></i></summary>
+                            <p>Eiusmod dolor do irure nulla cupidatat. Dolor quis dolore ullamco laboris esse esse.
+                            </p>
+                        </details>
+                        <details class="product-details">
+                            <summary>Størrelsestabell<i class="fa-solid fa-plus detail-icon"></i></summary>
+                            <p>Sjekk hvordan din vanlige størrelse konverterer til andre størrelser i vår
+                                størrelsesguide.
+                                Husk at dette kun er en generell guide og at størrelsene kan variere i forhold
+                                til merke
+                                og
+                                modell
+                            </p>
+                            <table>
+                                <tr>
+                                    <th>EU</th>
+                                    <th>INT</th>
+                                    <th>BRYSTVIDDE</th>
+                                    <th>LIVVIDDE</th>
+                                    <th>HOFTEMÅL</th>
+                                </tr>
+                                <tr>
+                                    <td>32</td>
+                                    <td>XXS</td>
+                                    <td>76</td>
+                                    <td>63</td>
+                                    <td>85</td>
+                                </tr>
+                                <tr>
+                                    <td>34</td>
+                                    <td>XS</td>
+                                    <td>80</td>
+                                    <td>66</td>
+                                    <td>89</td>
+                                </tr>
+                                <tr>
+                                    <td>36</td>
+                                    <td>S</td>
+                                    <td>84</td>
+                                    <td>69</td>
+                                    <td>93</td>
+                                </tr>
+                                <tr>
+                                    <td>38</td>
+                                    <td>M</td>
+                                    <td>88</td>
+                                    <td>72</td>
+                                    <td>97</td>
+                                </tr>
+                                <tr>
+                                    <td>40</td>
+                                    <td>L</td>
+                                    <td>92</td>
+                                    <td>76</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>42</td>
+                                    <td>XL</td>
+                                    <td>96</td>
+                                    <td>80</td>
+                                    <td>103</td>
+                                </tr>
+                                <tr>
+                                    <td>44</td>
+                                    <td>XXL</td>
+                                    <td>100</td>
+                                    <td>85</td>
+                                    <td>106</td>
+                                </tr>
+                                <tr>
+                                    <td>46</td>
+                                    <td>3XL</td>
+                                    <td>104</td>
+                                    <td>90</td>
+                                    <td>109</td>
+                                </tr>
+                                <tr>
+                                    <td>48</td>
+                                    <td>4XL</td>
+                                    <td>110</td>
+                                    <td>96.5</td>
+                                    <td>114</td>
+                                </tr>
+                                <tr>
+                                    <td>50</td>
+                                    <td>5XL</td>
+                                    <td>116</td>
+                                    <td>103</td>
+                                    <td>119</td>
+                                </tr>
+                                <tr>
+                                    <td>52</td>
+                                    <td>6XL</td>
+                                    <td>122</td>
+                                    <td>109.5</td>
+                                    <td>124</td>
+                                </tr>
+                                <tr>
+                                    <td>54</td>
+                                    <td>7XL</td>
+                                    <td>128</td>
+                                    <td>116</td>
+                                    <td>130</td>
+                                </tr>
+                                <tr>
+                                    <td>56</td>
+                                    <td>8XL</td>
+                                    <td>134</td>
+                                    <td>122.5</td>
+                                    <td>136</td>
+                                </tr>
+                                <tr>
+                                    <td>58</td>
+                                    <td>9XL</td>
+                                    <td>140</td>
+                                    <td>129</td>
+                                    <td>142</td>
+                                </tr>
+                                <tr>
+                                    <td>60</td>
+                                    <td>10XL</td>
+                                    <td>146</td>
+                                    <td>135.5</td>
+                                    <td>148</td>
+                                </tr>
+                            </table>
+                        </details>
+
+                        <section class="details-container">
+                            <h3 class="not-visible">Produktdetaljer: anmeldelse</h3>
+                            <ul class="details-title-icon">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li>32</li>
+                            </ul>
+                            <details class="details-review">
+                                <summary> Anmeldelser </summary>
+                                <article class="details-review-card">
+                                    <h5>Navn Navnesen</h5>
+                                    <p>2024-10-02</p>
+                                    <ul>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-regular fa-star"></i></li>
+                                        <li><i class="fa-regular fa-star"></i></li>
+                                    </ul>
+                                    <p>Eiusmod adipisicing deserunt ex qui enim dolore irure enim ipsum deserunt.</p>
+                                </article>
+                            </details>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <aside id="similar-product">
+            <h2>Lignende produkter</h2>
+            <span class="similar-arrow">
+                <a href="#">Se flere lignende produkter <i class="fa-solid fa-arrow-right"></i></a>
+            </span>
+            <section class="similar-products">
+                <h3 class="not-visible">Lignende produkter galleri</h3>
+                <a href="product.html">
+                    <article class="similar-card similar-scroll-child">
+                        <h4 class="not-visible">Lignende produkt 1</h4>
+                        <i class="fa-regular fa-heart product-card-icon"></i>
+                        <picture>
+                            <source media="(max-width: 300px)" srcset="https://picsum.photos/300/300">
+                            <source media="(max-width: 400px)" srcset="https://picsum.photos/400/400">
+                            <img src="https://picsum.photos/800/800"
+                                alt="Similar product bilde, generert tilfeldig av Picsum.">
+                        </picture>
+                        <article class="similar-card-info">
+                            <ul class="simcard1">
+                                <li>Product Name</li>
+                                <li>1999 kr</li>
+                            </ul>
+                            <ul class="simcard2">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li>842 Reviews</li>
+                            </ul>
+                        </article>
+                    </article>
+                </a>
+
+                <a href="product.html">
+                    <article class="similar-card similar-scroll-child">
+                        <h4 class="not-visible">Lignende produkt 1</h4>
+                        <i class="fa-regular fa-heart product-card-icon"></i>
+                        <picture>
+                            <source media="(max-width: 300px)" srcset="https://picsum.photos/300/300">
+                            <source media="(max-width: 400px)" srcset="https://picsum.photos/400/400">
+                            <img src="https://picsum.photos/800/800"
+                                alt="Similar product bilde, generert tilfeldig av Picsum.">
+                        </picture>
+                        <article class="similar-card-info">
+                            <ul class="simcard1">
+                                <li>Product Name</li>
+                                <li>1999 kr</li>
+                            </ul>
+                            <ul class="simcard2">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li>842 Reviews</li>
+                            </ul>
+                        </article>
+                    </article>
+                </a>
+
+                <a href="product.html">
+                    <article class="similar-card similar-scroll-child">
+                        <h4 class="not-visible">Lignende produkt 1</h4>
+                        <i class="fa-regular fa-heart product-card-icon"></i>
+                        <picture>
+                            <source media="(max-width: 300px)" srcset="https://picsum.photos/300/300">
+                            <source media="(max-width: 400px)" srcset="https://picsum.photos/400/400">
+                            <img src="https://picsum.photos/800/800"
+                                alt="Similar product bilde, generert tilfeldig av Picsum.">
+                        </picture>
+                        <article class="similar-card-info">
+                            <ul class="simcard1">
+                                <li>Product Name</li>
+                                <li>1999 kr</li>
+                            </ul>
+                            <ul class="simcard2">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li>842 Reviews</li>
+                            </ul>
+                        </article>
+                    </article>
+                </a>
+
+                <a href="product.html">
+                    <article class="similar-card similar-scroll-child">
+                        <h4 class="not-visible">Lignende produkt 1</h4>
+                        <i class="fa-regular fa-heart product-card-icon"></i>
+                        <picture>
+                            <source media="(max-width: 300px)" srcset="https://picsum.photos/300/300">
+                            <source media="(max-width: 400px)" srcset="https://picsum.photos/400/400">
+                            <img src="https://picsum.photos/800/800"
+                                alt="Similar product bilde, generert tilfeldig av Picsum.">
+                        </picture>
+                        <article class="similar-card-info">
+                            <ul class="simcard1">
+                                <li>Product Name</li>
+                                <li>1999 kr</li>
+                            </ul>
+                            <ul class="simcard2">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li>842 Reviews</li>
+                            </ul>
+                        </article>
+                    </article>
+                </a>
+
+                <a href="product.html">
+                    <article class="similar-card similar-scroll-child">
+                        <h4 class="not-visible">Lignende produkt 1</h4>
+                        <i class="fa-regular fa-heart product-card-icon"></i>
+                        <picture>
+                            <source media="(max-width: 300px)" srcset="https://picsum.photos/300/300">
+                            <source media="(max-width: 400px)" srcset="https://picsum.photos/400/400">
+                            <img src="https://picsum.photos/800/800"
+                                alt="Similar product bilde, generert tilfeldig av Picsum.">
+                        </picture>
+                        <article class="similar-card-info">
+                            <ul class="simcard1">
+                                <li>Product Name</li>
+                                <li>1999 kr</li>
+                            </ul>
+                            <ul class="simcard2">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li>842 Reviews</li>
+                            </ul>
+                        </article>
+                    </article>
+                </a>
+
+                <a href="product.html">
+                    <article class="similar-card similar-scroll-child">
+                        <h4 class="not-visible">Lignende produkt 1</h4>
+                        <i class="fa-regular fa-heart product-card-icon"></i>
+                        <picture>
+                            <source media="(max-width: 300px)" srcset="https://picsum.photos/300/300">
+                            <source media="(max-width: 400px)" srcset="https://picsum.photos/400/400">
+                            <img src="https://picsum.photos/800/800"
+                                alt="Similar product bilde, generert tilfeldig av Picsum.">
+                        </picture>
+                        <article class="similar-card-info">
+                            <ul class="simcard1">
+                                <li>Product Name</li>
+                                <li>1999 kr</li>
+                            </ul>
+                            <ul class="simcard2">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li>842 Reviews</li>
+                            </ul>
+                        </article>
+                    </article>
+                </a>
+            </section>
+        </aside>
+
+        <section id="reviews">
+            <h2>Anmeldelser</h2>
+            <section class="review-cards side-scroll-parent">
+                <h3 class="not-visible">Anmeldelseskort</h3>
+                <article class="review-card side-scroll-child">
+                    <img src="https://picsum.photos/100/100"
+                        alt="Bilde av kunden som ga omtale. Tilfeldig generert Picsum.">
+                    <h5>Navn Navnesen</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <p>Reprehenderit aute nulla proident occaecat culpa occaecat. Consequat cupidatat sunt elit minim.
+                    </p>
+                </article>
+
+                <article class="review-card side-scroll-child">
+                    <img src="https://picsum.photos/100/100"
+                        alt="Bilde av kunden som ga omtale. Tilfeldig generert Picsum.">
+                    <h5>Navn Navnesen</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <p>Reprehenderit aute nulla proident occaecat culpa occaecat. Consequat cupidatat sunt elit minim.
+                    </p>
+                </article>
+
+                <article class="review-card side-scroll-child">
+                    <img src="https://picsum.photos/100/100"
+                        alt="Bilde av kunden som ga omtale. Tilfeldig generert Picsum.">
+                    <h5>Navn Navnesen</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <p>Reprehenderit aute nulla proident occaecat culpa occaecat. Consequat cupidatat sunt elit minim.
+                    </p>
+                </article>
+
+                <article class="review-card side-scroll-child">
+                    <img src="https://picsum.photos/100/100"
+                        alt="Bilde av kunden som ga omtale. Tilfeldig generert Picsum.">
+                    <h5>Navn Navnesen</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <p>Reprehenderit aute nulla proident occaecat culpa occaecat. Consequat cupidatat sunt elit minim.
+                    </p>
+                </article>
+
+                <article class="review-card side-scroll-child">
+                    <img src="https://picsum.photos/100/100"
+                        alt="Bilde av kunden som ga omtale. Tilfeldig generert Picsum.">
+                    <h5>Navn Navnesen</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <p>Reprehenderit aute nulla proident occaecat culpa occaecat. Consequat cupidatat sunt elit minim.
+                    </p>
+                </article>
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="footer-logo">
+            <a href="index.html" aria-label="logo">
+                <h3>Logo</h3>
+            </a>
+            <p>Cupidatat eu consequat ad voluptate. Qui sunt occaecat cupidatat reprehenderit.</p>
+        </section>
+
+        <section class="footer-contact" id="contact">
+            <h4>KONTAKT</h4>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i><span>Adresse:</span> B R A Veien 4, 1757 Halden
+                </li>
+                <li><i class="fa-solid fa-phone"></i><span>Telefon:</span> 69 60 80 00</li>
+                <li><i class="fa-solid fa-envelope"></i><span>E-post:</span> halden@hiof.no </li>
+                <li><i class="fa-solid fa-clock"></i><span>Åpningstider:</span> Stenger 15:00 </li>
+            </ul>
+        </section>
+
+        <section class="footer-shortcuts">
+            <h4>Snarveier</h4>
+            <ul>
+                <li><a href="product.html">Produkter</a></li>
+                <li><a href="index.html#pop-category">Kategorier</a></li>
+                <li><a href="#contact">Kontakt oss</a></li>
+                <li><a href="WCAG-sjekkliste.pdf">Tilgjengelighetserklæring</a></li>
+            </ul>
+        </section>
+
+        <section class="footer-social">
+            <h4>Sosiale medier</h4>
+            <ul>
+                <li><a href="https://www.instagram.com" aria-label="Instagram" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </li>
+                <li><a href="https://www.facebook.com" aria-label="Facebook" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com" aria-label="LinkedIn" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </li>
+                <li><a href="https://www.pinterest.com" aria-label="Pinterest" target="_blank"><i
+                            class="fab fa-pinterest"></i></a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>
